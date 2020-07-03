@@ -1,0 +1,4 @@
+author = AlexanderDMoon
+version = 1.2
+displayName = Alex's Assorted Arsenal
+homepage = https://forums.terraria.org/index.php?threads/alexs-assorted-arsenal.83782/
