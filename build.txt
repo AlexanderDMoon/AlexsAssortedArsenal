@@ -1,4 +1,4 @@
 author = AlexanderDMoon
-version = 1.2
-displayName = Alex's Assorted Arsenal
+version = 1.3
+displayName = Ancient's Arsenal
 homepage = https://forums.terraria.org/index.php?threads/alexs-assorted-arsenal.83782/

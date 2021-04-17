@@ -28,6 +28,9 @@ namespace AlexsAssortedArsenal
             AlexsAssortedArsenal.Instance.ProjectileType("EmeraldBullet");
             AlexsAssortedArsenal.Instance.ProjectileType("RubyBullet");
             AlexsAssortedArsenal.Instance.ProjectileType("DiamondBullet");
+            AlexsAssortedArsenal.Instance.ProjectileType("AmberBullet");
+            AlexsAssortedArsenal.Instance.ProjectileType("AquamarineBullet");
+            AlexsAssortedArsenal.Instance.ProjectileType("PenumbriteBullet");
 
             Instance = this;
             AlexsAssortedArsenal.Instance.ProjectileType("PurpleStarblast");
@@ -36,6 +39,8 @@ namespace AlexsAssortedArsenal
             AlexsAssortedArsenal.Instance.ProjectileType("GreenStarblast");
             AlexsAssortedArsenal.Instance.ProjectileType("RedStarblast");
             AlexsAssortedArsenal.Instance.ProjectileType("WhiteStarblast");
+            AlexsAssortedArsenal.Instance.ProjectileType("AquamarineStarblast");
+            AlexsAssortedArsenal.Instance.ProjectileType("PenumbriteStarblast");
 
             Instance = this;
             AlexsAssortedArsenal.Instance.ProjectileType("HighVelocityNebula");
@@ -50,6 +55,17 @@ namespace AlexsAssortedArsenal
             AlexsAssortedArsenal.Instance.ProjectileType("SwordBeamEmerald");
             AlexsAssortedArsenal.Instance.ProjectileType("SwordBeamRuby");
             AlexsAssortedArsenal.Instance.ProjectileType("SwordBeamDiamond");
+            AlexsAssortedArsenal.Instance.ProjectileType("SwordBeamAmber");
+            AlexsAssortedArsenal.Instance.ProjectileType("SwordBeamAquamarine");
+            AlexsAssortedArsenal.Instance.ProjectileType("SwordBeamPenumbrite");
+
+            Instance = this;
+            AlexsAssortedArsenal.Instance.ProjectileType("BrambleSparkCorruption");
+            AlexsAssortedArsenal.Instance.ProjectileType("BrambleSparkCrimson");
+            AlexsAssortedArsenal.Instance.ProjectileType("BrambleSparkHallow");
+            AlexsAssortedArsenal.Instance.ProjectileType("BrambleSparkJungle");
+            AlexsAssortedArsenal.Instance.ProjectileType("BrambleSparkOcean");
+            AlexsAssortedArsenal.Instance.ProjectileType("BrambleSparkSnow");
         }
 
         public override void Load()
@@ -69,10 +85,24 @@ namespace AlexsAssortedArsenal
                             ItemType("PurpleStarStriker"),
                             ItemType("WhiteStarStriker"),
                             ItemType("YellowStarStriker"),
-                            ItemType("PrismarineStarStriker"),
+                            ItemType("AquamarineStarStriker"),
                             ItemType("AmberStarStriker")
             });
             RecipeGroup.RegisterGroup("AlexsAssortedArsenal:Star Striker", group);
+
+            group = new RecipeGroup(() => Lang.misc[37] + " Copper or Tin", new int[]
+            {
+                            ItemID.CopperBar,
+                            ItemID.TinBar,
+            });
+            RecipeGroup.RegisterGroup("AlexsAssortedArsenal:Copper or Tin Bar", group);
+
+            group = new RecipeGroup(() => Lang.misc[37] + " Iron or Lead Bar", new int[]
+            {
+                            ItemID.IronBar,
+                            ItemID.LeadBar,
+            });
+            RecipeGroup.RegisterGroup("AlexsAssortedArsenal:Iron or Lead Bar", group);
 
             group = new RecipeGroup(() => Lang.misc[37] + " Silver or Tungsten", new int[]
             {
@@ -88,33 +118,12 @@ namespace AlexsAssortedArsenal
             });
             RecipeGroup.RegisterGroup("AlexsAssortedArsenal:Gold or Platinum Bar", group);
 
-            group = new RecipeGroup(() => Lang.misc[37] + " Adamantite or Titanium Forge", new int[]
+            group = new RecipeGroup(() => Lang.misc[37] + " Demonite or Crimtane Bar", new int[]
             {
-                            ItemID.AdamantiteForge,
-                            ItemID.TitaniumForge,
+                            ItemID.DemoniteBar,
+                            ItemID.CrimtaneBar,
             });
-            RecipeGroup.RegisterGroup("AlexsAssortedArsenal:Adamantite or Titanium Forge", group);
-
-            group = new RecipeGroup(() => Lang.misc[37] + " Adamantite or Titanium Bar", new int[]
-            {
-                            ItemID.AdamantiteBar,
-                            ItemID.TitaniumBar,
-            });
-            RecipeGroup.RegisterGroup("AlexsAssortedArsenal:Adamantite or Titanium Bar", group);
-
-            group = new RecipeGroup(() => Lang.misc[37] + " Gold or Platinum Pickaxe", new int[]
-            {
-                            ItemID.GoldPickaxe,
-                            ItemID.PlatinumPickaxe,
-            });
-            RecipeGroup.RegisterGroup("AlexsAssortedArsenal:Gold or Platinum Pickaxe", group);
-
-            group = new RecipeGroup(() => Lang.misc[37] + " Iron or Lead Bar", new int[]
-            {
-                            ItemID.IronBar,
-                            ItemID.LeadBar,
-            });
-            RecipeGroup.RegisterGroup("AlexsAssortedArsenal:Iron or Lead Bar", group);
+            RecipeGroup.RegisterGroup("AlexsAssortedArsenal:Demonite or Crimtane Bar", group);
 
             group = new RecipeGroup(() => Lang.misc[37] + " Cobalt or Palladium Bar", new int[]
             {
@@ -123,12 +132,33 @@ namespace AlexsAssortedArsenal
             });
             RecipeGroup.RegisterGroup("AlexsAssortedArsenal:Cobalt or Palladium Bar", group);
 
-            group = new RecipeGroup(() => Lang.misc[37] + " Demonite or Crimtane Bar", new int[]
+            group = new RecipeGroup(() => Lang.misc[37] + " Mythril or Orichaclum Bar", new int[]
             {
-                            ItemID.DemoniteBar,
-                            ItemID.CrimtaneBar,
+                            ItemID.MythrilBar,
+                            ItemID.OrichalcumBar,
             });
-            RecipeGroup.RegisterGroup("AlexsAssortedArsenal:Demonite or Crimtane Bar", group);
+            RecipeGroup.RegisterGroup("AlexsAssortedArsenal:Mythril or Orichalcum Bar", group);
+
+            group = new RecipeGroup(() => Lang.misc[37] + " Adamantite or Titanium Bar", new int[]
+            {
+                            ItemID.AdamantiteBar,
+                            ItemID.TitaniumBar,
+            });
+            RecipeGroup.RegisterGroup("AlexsAssortedArsenal:Adamantite or Titanium Bar", group);
+
+            group = new RecipeGroup(() => Lang.misc[37] + " Adamantite or Titanium Forge", new int[]
+            {
+                            ItemID.AdamantiteForge,
+                            ItemID.TitaniumForge,
+            });
+            RecipeGroup.RegisterGroup("AlexsAssortedArsenal:Adamantite or Titanium Forge", group);
+
+            group = new RecipeGroup(() => Lang.misc[37] + " Gold or Platinum Pickaxe", new int[]
+            {
+                            ItemID.GoldPickaxe,
+                            ItemID.PlatinumPickaxe,
+            });
+            RecipeGroup.RegisterGroup("AlexsAssortedArsenal:Gold or Platinum Pickaxe", group);
 
             group = new RecipeGroup(() => Lang.misc[37] + " Shadow Scales or Tissue Samples", new int[]
             {
@@ -145,68 +175,45 @@ namespace AlexsAssortedArsenal
             });
             RecipeGroup.RegisterGroup("AlexsAssortedArsenal:Hallowed Headpiece", group);
 
-            group = new RecipeGroup(() => Lang.misc[37] + " Copper or Tin GeMP-44", new int[]
+            group = new RecipeGroup(() => Lang.misc[37] + " GeMP-44", new int[]
             {
                             ItemType("GeMP44AC"),
                             ItemType("GeMP44TT"),
-            });
-            RecipeGroup.RegisterGroup("AlexsAssortedArsenal:Copper or Tin GeMP-44", group);
-
-            group = new RecipeGroup(() => Lang.misc[37] + " Silver or Tungsten GeMP-44", new int[]
-            {
+                            ItemType("GeMP44AI"),
+                            ItemType("GeMP44PL"),
                             ItemType("GeMP44SS"),
                             ItemType("GeMP44ET"),
-            });
-            RecipeGroup.RegisterGroup("AlexsAssortedArsenal:Silver or Tungsten GeMP-44", group);
-
-            group = new RecipeGroup(() => Lang.misc[37] + " Gold or Platinum GeMP-44", new int[]
-            {
                             ItemType("GeMP44RG"),
                             ItemType("GeMP44DP"),
             });
-            RecipeGroup.RegisterGroup("AlexsAssortedArsenal:Gold or Platinum GeMP-44", group);
+            RecipeGroup.RegisterGroup("AlexsAssortedArsenal:Any GeMP-44", group);
 
-            group = new RecipeGroup(() => Lang.misc[37] + " Amethyst or Topaz Staff", new int[]
+            group = new RecipeGroup(() => Lang.misc[37] + " Metal Staff", new int[]
             {
                             ItemID.AmethystStaff,
                             ItemID.TopazStaff,
-            });
-            RecipeGroup.RegisterGroup("AlexsAssortedArsenal:Amethyst or Topaz Staff", group);
-
-            group = new RecipeGroup(() => Lang.misc[37] + " Sapphire or Emerald Staff", new int[]
-            {
+                            ItemType("IronStaff"),
+                            ItemType("LeadStaff"),
                             ItemID.SapphireStaff,
                             ItemID.EmeraldStaff,
-            });
-            RecipeGroup.RegisterGroup("AlexsAssortedArsenal:Sapphire or Emerald Staff", group);
-
-            group = new RecipeGroup(() => Lang.misc[37] + " Ruby or Diamond Staff", new int[]
-            {
                             ItemID.RubyStaff,
                             ItemID.DiamondStaff,
+                            ItemID.AmberStaff,
             });
-            RecipeGroup.RegisterGroup("AlexsAssortedArsenal:Ruby or Diamond Staff", group);
+            RecipeGroup.RegisterGroup("AlexsAssortedArsenal:Any Metal Staff", group);
 
-            group = new RecipeGroup(() => Lang.misc[37] + " Copper or Tin Metalligem Greatsword", new int []
+            group = new RecipeGroup(() => Lang.misc[37] + " Metalligem Greatsword", new int []
             {
                             ItemType("CopperMetalligemGreatsword"),
                             ItemType("TinMetalligemGreatsword"),
-            });
-            RecipeGroup.RegisterGroup("AlexsAssortedArsenal:Copper or Tin Metalligem Greatsword", group);
-
-            group = new RecipeGroup(() => Lang.misc[37] + " Silver or Tungsten Metalligem Greatsword", new int[]
-            {
+                            ItemType("IronMetalligemGreatsword"),
+                            ItemType("LeadMetalligemGreatsword"),
                             ItemType("SilverMetalligemGreatsword"),
                             ItemType("TungstenMetalligemGreatsword"),
-            });
-            RecipeGroup.RegisterGroup("AlexsAssortedArsenal:Silver or Tungsten Metalligem Greatsword", group);
-
-            group = new RecipeGroup(() => Lang.misc[37] + " Gold or Platinum Metalligem Greatsword", new int[]
-            {
                             ItemType("GoldMetalligemGreatsword"),
                             ItemType("PlatinumMetalligemGreatsword"),
             });
-            RecipeGroup.RegisterGroup("AlexsAssortedArsenal:Gold or Platinum Metalligem Greatsword", group);
+            RecipeGroup.RegisterGroup("AlexsAssortedArsenal:Any Metalligem Greatsword", group);
 
             group = new RecipeGroup(() => Lang.misc[37] + " Adamantite or Titanium Statusblade", new int[]
             {
@@ -274,13 +281,72 @@ namespace AlexsAssortedArsenal
                             ItemType("MiningDrillPlatinum"),
             });
             RecipeGroup.RegisterGroup("AlexsAssortedArsenal:Gold or Platinum Drill", group);
+
+            group = new RecipeGroup(() => Lang.misc[37] + " Blightspark or Bloodspark Wand", new int[]
+            {
+                            ItemType("SparkWandCorruption"),
+                            ItemType("SparkWandCrimson"),
+            });
+            RecipeGroup.RegisterGroup("AlexsAssortedArsenal:Blightspark or Bloodspark Wand", group);
+
+            group = new RecipeGroup(() => Lang.misc[37] + " M1 Gangarand, FN-FLAY, OR Cryo Driver", new int[]
+            {
+                            ItemType("M1Gangarand"),
+                            ItemType("FNFLAY"),
+                            ItemType("CryoDriver"),
+            });
+            RecipeGroup.RegisterGroup("AlexsAssortedArsenal:M1 Gangarand, FN-FLAY, or Cryo Driver", group);
+
+            group = new RecipeGroup(() => Lang.misc[37] + " Lightning Bugs or Fireflies", new int[]
+            {
+                            ItemID.LightningBug,
+                            ItemID.Firefly,
+            });
+            RecipeGroup.RegisterGroup("AlexsAssortedArsenal:Lightning Bugs or Fireflies", group);
+
+            group = new RecipeGroup(() => Lang.misc[37] + " Gold or Platinum Helmet", new int[]
+            {
+                            ItemID.AncientGoldHelmet,
+                            ItemID.GoldHelmet,
+                            ItemID.PlatinumHelmet,
+            });
+            RecipeGroup.RegisterGroup("AlexsAssortedArsenal:Gold or Platinum Helmet", group);
+
+            group = new RecipeGroup(() => Lang.misc[37] + " Gold or Platinum Chestpiece", new int[]
+            {
+                            ItemID.GoldChainmail,
+                            ItemID.PlatinumChainmail,
+            });
+            RecipeGroup.RegisterGroup("AlexsAssortedArsenal:Gold or Platinum Chestpiece", group);
+
+            group = new RecipeGroup(() => Lang.misc[37] + " Gold or Platinum Greaves", new int[]
+            {
+                            ItemID.GoldGreaves,
+                            ItemID.PlatinumGreaves,
+            });
+            RecipeGroup.RegisterGroup("AlexsAssortedArsenal:Gold or Platinum Greaves", group);
+
+            group = new RecipeGroup(() => Lang.misc[37] + " Shadowscale or Crimson Chestpiece", new int[]
+            {
+                            ItemID.ShadowScalemail,
+                            ItemID.AncientShadowScalemail,
+                            ItemID.CrimsonChest,
+            });
+            RecipeGroup.RegisterGroup("AlexsAssortedArsenal:Shadowscale or Crimson Chestpiece", group);
+
+            group = new RecipeGroup(() => Lang.misc[37] + " Magic Mirror or Ice Mirror", new int[]
+            {
+                            ItemID.MagicMirror,
+                            ItemID.IceMirror,
+            });
+            RecipeGroup.RegisterGroup("AlexsAssortedArsenal:Magic Mirror or Ice Mirror", group);
         }
     }
 }
 
 namespace AlexsAssortedArsenal.Tiles
 {
-    //------------------TILES------------------
+    //------------------UTILITY AND DECORATION TILES------------------
 
     public class PeacekeeperWorkbench : ModTile
     {
@@ -313,6 +379,7 @@ namespace AlexsAssortedArsenal.Tiles
             Item.NewItem(i * 16, j * 16, 32, 16, mod.ItemType("PeacekeeperWorkbench"));
         }
     }
+
     public class PeacekeeperAnvil : ModTile
     {
         public override void SetDefaults()
@@ -343,6 +410,7 @@ namespace AlexsAssortedArsenal.Tiles
             Item.NewItem(i * 16, j * 16, 32, 16, mod.ItemType("PeacekeeperAnvil"));
         }
     }
+
     public class PeacekeeperForge : ModTile
     {
         public override void SetDefaults()
@@ -378,13 +446,51 @@ namespace AlexsAssortedArsenal.Tiles
     {
         public override void SetDefaults()
         {
+            minPick = 250;
             Main.tileSolid[Type] = true;
             Main.tileMergeDirt[Type] = true;
             Main.tileBlockLight[Type] = true;
             Main.tileLighted[Type] = true;
+            Main.tileBlendAll[Type] = true;
             Main.tileMerge[ModContent.TileType<AetheriumBrick>()][ModContent.TileType<AetheriumPaneling>()] = true;
             drop = mod.ItemType("AetheriumBrick");
             AddMapEntry(new Color(200, 200, 200));
+        }
+    }
+
+    public class AetheriumBrickWeathered : ModTile
+    {
+        public override void SetDefaults()
+        {
+            minPick = 250;
+            Main.tileSolid[Type] = true;
+            Main.tileMergeDirt[Type] = true;
+            Main.tileBlockLight[Type] = true;
+            Main.tileLighted[Type] = true;
+            Main.tileBlendAll[Type] = true;
+            Main.tileMerge[ModContent.TileType<AetheriumBrick>()][ModContent.TileType<AetheriumPaneling>()] = true;
+            drop = mod.ItemType("AetheriumBrickWeathered");
+            AddMapEntry(new Color(165, 140, 165));
+        }
+    }
+
+    public class AetheriumBrickWall : ModWall
+    {
+        public override void SetDefaults()
+        {
+            Main.wallHouse[Type] = true;
+            drop = mod.ItemType("AetheriumBrickWall");
+            AddMapEntry(new Color(125, 125, 125));
+        }
+    }
+
+    public class AetheriumBrickWallWeathered : ModWall
+    {
+        public override void SetDefaults()
+        {
+            Main.wallHouse[Type] = true;
+            drop = mod.ItemType("AetheriumBrickWallWeathered");
+            AddMapEntry(new Color(80, 65, 80));
         }
     }
 
@@ -392,10 +498,12 @@ namespace AlexsAssortedArsenal.Tiles
     {
         public override void SetDefaults()
         {
+            minPick = 245;
             Main.tileSolid[Type] = true;
             Main.tileMergeDirt[Type] = false;
             Main.tileBlockLight[Type] = true;
             Main.tileLighted[Type] = true;
+            Main.tileBlendAll[Type] = true;
             Main.tileMerge[ModContent.TileType<AetheriumPaneling>()][ModContent.TileType<AetheriumBrick>()] = true;
             drop = mod.ItemType("AetheriumPaneling");
             AddMapEntry(new Color(200, 200, 200));
@@ -406,6 +514,7 @@ namespace AlexsAssortedArsenal.Tiles
     {
         public override void SetDefaults()
         {
+            minPick = 250;
             Main.tileLighted[Type] = true;
             Main.tileFrameImportant[Type] = true;
             Main.tileSolidTop[Type] = true;
@@ -1444,6 +1553,68 @@ namespace AlexsAssortedArsenal.Tiles
         }
     }
 
+    public class OfficeDesk : ModTile
+    {
+        public override void SetDefaults()
+        {
+            Main.tileSolidTop[Type] = false;
+            Main.tileFrameImportant[Type] = true;
+            Main.tileNoAttach[Type] = true;
+            Main.tileTable[Type] = false;
+            Main.tileLavaDeath[Type] = false;
+            TileObjectData.newTile.CopyFrom(TileObjectData.Style3x3);
+            TileObjectData.newTile.Height = 3;
+            TileObjectData.newTile.Width = 3;
+            TileObjectData.addTile(Type);
+            ModTranslation name = CreateMapEntryName("Office Desk");
+            AddMapEntry(new Color(500, 500, 500), name);
+            disableSmartCursor = true;
+        }
+
+        public override void NumDust(int i, int j, bool fail, ref int num)
+        {
+            num = fail ? 1 : 3;
+        }
+
+        public override void KillMultiTile(int i, int j, int frameX, int frameY)
+        {
+            Item.NewItem(i * 16, j * 16, 32, 16, mod.ItemType("OfficeDesk"));
+        }
+    }
+
+
+    public class Ore_Penumbrite : ModTile
+    {
+        public override void SetDefaults()
+        {
+            minPick = 0;
+            Main.tileSolid[Type] = true;
+            Main.tileMergeDirt[Type] = true;
+            Main.tileBlockLight[Type] = true;
+            Main.tileLighted[Type] = true;
+            Main.tileBlendAll[Type] = true;
+            ModTranslation name = CreateMapEntryName("Penumbrite");
+            drop = mod.ItemType("Penumbrite");
+            AddMapEntry(new Color(61, 39, 124));
+        }
+    }
+
+    public class Ore_Aquamarine : ModTile
+    {
+        public override void SetDefaults()
+        {
+            minPick = 0;
+            Main.tileSolid[Type] = true;
+            Main.tileMergeDirt[Type] = true;
+            Main.tileBlockLight[Type] = true;
+            Main.tileLighted[Type] = true;
+            Main.tileBlendAll[Type] = true;
+            ModTranslation name = CreateMapEntryName("Aquamarine");
+            drop = mod.ItemType("Aquamarine");
+            AddMapEntry(new Color(37, 196, 193));
+        }
+    }
+
     namespace AlexsAssortedArsenal.Buffs
     {
         //------------------BUFFS AND DEBUFFS------------------
@@ -1486,7 +1657,7 @@ namespace AlexsAssortedArsenal.Tiles
 
                 public override void Update(Player player, ref int buffIndex)
                 {
-                    player.thorns = 0.65f;
+                    player.thorns = 1.25f;
                 }
             }
 
@@ -1540,8 +1711,68 @@ namespace AlexsAssortedArsenal.Tiles
 
                 public override void Update(Player player, ref int BuffIndex)
                 {
-                    player.lifeRegen = 3;
+                    player.lifeRegen = 2;
+                    player.statDefense += 2;
+                }
+            }
+
+            public class EnchantmentOfMight : ModBuff
+            {
+                public override void SetDefaults()
+                {
+                    DisplayName.SetDefault("Enchantment of Might");
+                    Description.SetDefault("Life Regeneration Increased by 2. \nMovement speed increased by 6%. \nRanged Crit Chance increased by 4%.");
+                    Main.debuff[Type] = false;
+                    Main.buffNoSave[Type] = true;
+                    Main.buffNoTimeDisplay[Type] = false;
+                    canBeCleared = true;
+                }
+
+                public override void Update(Player player, ref int BuffIndex)
+                {
+                    player.lifeRegen = 2;
+                    player.moveSpeed += 0.06f;
+                    player.rangedCrit += 4;
+                }
+            }
+
+            public class EnchantmentOfSight : ModBuff
+            {
+                public override void SetDefaults()
+                {
+                    DisplayName.SetDefault("Enchantment of Sight");
+                    Description.SetDefault("Life Regeneration increased by 2. \nDefense increased by 4. \nMana Efficiency increased by 7%.");
+                    Main.debuff[Type] = false;
+                    Main.buffNoSave[Type] = true;
+                    Main.buffNoTimeDisplay[Type] = false;
+                    canBeCleared = true;
+                }
+
+                public override void Update(Player player, ref int BuffIndex)
+                {
+                    player.lifeRegen = 2;
                     player.statDefense += 4;
+                    player.manaCost *= 0.93f;
+                }
+            }
+
+            public class EnchantmentOfFright : ModBuff
+            {
+                public override void SetDefaults()
+                {
+                    DisplayName.SetDefault("Enchantment of Fright");
+                    Description.SetDefault("Life Regeneration increased by 4. \nDefense increased by 6. \nMelee speed increased by 8%.");
+                    Main.debuff[Type] = false;
+                    Main.buffNoSave[Type] = true;
+                    Main.buffNoTimeDisplay[Type] = false;
+                    canBeCleared = true;
+                }
+
+                public override void Update(Player player, ref int BuffIndex)
+                {
+                    player.lifeRegen = 4;
+                    player.statDefense += 6;
+                    player.meleeSpeed += 0.08f;
                 }
             }
 
@@ -1613,7 +1844,7 @@ namespace AlexsAssortedArsenal.Tiles
 
                 public override void Update(NPC npc, ref int buffIndex)
                 {
-                    npc.lifeRegen = -35;
+                    npc.lifeRegen = -25;
                 }
             }
 
@@ -1631,8 +1862,8 @@ namespace AlexsAssortedArsenal.Tiles
 
                 public override void Update(Player player, ref int buffIndex)
                 {
-                    player.statDefense += 8;
-                    player.lifeRegen = 4;
+                    player.statDefense += 6;
+                    player.lifeRegen = 3;
                 }
             }
 
@@ -1650,7 +1881,7 @@ namespace AlexsAssortedArsenal.Tiles
 
                 public override void Update(NPC npc, ref int buffIndex)
                 {
-                    npc.lifeRegen = -35;
+                    npc.lifeRegen = -25;
                 }
             }
 
@@ -1669,7 +1900,7 @@ namespace AlexsAssortedArsenal.Tiles
                 public override void Update(Player player, ref int buffIndex)
                 {
                     player.moveSpeed += 0.10f;
-                    player.lifeRegen = 4;
+                    player.lifeRegen = 3;
                 }
             }
 
@@ -1717,7 +1948,7 @@ namespace AlexsAssortedArsenal.Tiles
                 public override void SetDefaults()
                 {
                     DisplayName.SetDefault("Apparition");
-                    Description.SetDefault("Now's your chance to run. But who does that nowadays, anyway?");
+                    Description.SetDefault("Now's your chance to run. But who does that nowadays, anyway? /nIncreases Life Regeneration by 6. \nGrants Invisibility and Featherfall.");
                     Main.debuff[Type] = false;
                     Main.buffNoSave[Type] = true;
                     Main.buffNoTimeDisplay[Type] = false;
@@ -1737,7 +1968,7 @@ namespace AlexsAssortedArsenal.Tiles
                 public override void SetDefaults()
                 {
                     DisplayName.SetDefault("Circadian Fury");
-                    Description.SetDefault("Burning at the seams.");
+                    Description.SetDefault("Returning to dust.");
                     Main.debuff[Type] = true;
                     Main.buffNoSave[Type] = true;
                     Main.buffNoTimeDisplay[Type] = false;
@@ -1786,7 +2017,7 @@ namespace AlexsAssortedArsenal.Tiles
                 public override void Update(Player player, ref int buffIndex)
                 {
                     player.statLifeMax2 += player.statLifeMax / 5 / 20 * 20;
-                    player.endurance += 1.20f;
+                    player.endurance += 0.20f;
                     player.kbBuff = true;
                 }
             }
@@ -2026,7 +2257,7 @@ namespace AlexsAssortedArsenal.Tiles
             {
                 public override void SetDefaults()
                 {
-                    DisplayName.SetDefault("Soul Boost (Summoning)");
+                    DisplayName.SetDefault("Soul Boost (Summon)");
                     Description.SetDefault("Summon damage increased by 7%. \n+1 minion slot. \nLife regen increased.");
                     Main.debuff[Type] = false;
                     Main.buffNoSave[Type] = true;
@@ -2046,7 +2277,7 @@ namespace AlexsAssortedArsenal.Tiles
             {
                 public override void SetDefaults()
                 {
-                    DisplayName.SetDefault("Mental Degredation");
+                    DisplayName.SetDefault("Mental Degradation");
                     Description.SetDefault("The world is melting, and only you can see it happening.");
                     Main.debuff[Type] = true;
                     Main.buffNoSave[Type] = true;
@@ -2147,6 +2378,26 @@ namespace AlexsAssortedArsenal.Tiles
                 public override void Update(Player player, ref int buffIndex)
                 {
                     player.manaRegenBuff = true;
+                }
+            }
+
+            public class Bullseye : ModBuff
+            {
+                public override void SetDefaults()
+                {
+                    DisplayName.SetDefault("Bullseye");
+                    Description.SetDefault("Ranged proficiency increased.");
+                    Main.debuff[Type] = false;
+                    Main.buffNoSave[Type] = true;
+                    Main.buffNoTimeDisplay[Type] = false;
+                    canBeCleared = true;
+                }
+
+                public override void Update(Player player, ref int buffIndex)
+                {
+                    player.bulletDamage = 1.20f;
+                    player.archery = true;
+                    player.ammoPotion = true;
                 }
             }
         }
