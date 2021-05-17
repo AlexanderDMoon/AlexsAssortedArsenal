@@ -21,6 +21,8 @@ namespace AlexsAssortedArsenal
     {
         public override void AddRecipes()
         {
+
+            //--------------------VANILLA ITEM RECIPES-------------------
             ModRecipe recipe = new ModRecipe(mod);
             recipe.AddIngredient(ItemID.Wood, 25);
             recipe.AddIngredient(ItemID.Torch, 10);
@@ -39,12 +41,37 @@ namespace AlexsAssortedArsenal
             recipe.SetResult(ItemID.RodofDiscord);
             recipe.AddRecipe();
 
+            ///////////////////////////////////////////////////////////////////
+
             recipe = new ModRecipe(mod);
-            recipe.AddRecipeGroup("AlexsAssortedArsenal:Copper or Tin Bar", 3);
-            recipe.AddRecipeGroup("AlexsAssortedArsenal:Iron or Lead Bar", 1);
+            recipe.AddIngredient(ItemID.CopperBar, 3);
+            recipe.AddIngredient(ItemID.IronBar, 1);
             recipe.AddTile(TileID.Anvils);
             recipe.SetResult(ItemID.Aglet);
             recipe.AddRecipe();
+
+            recipe = new ModRecipe(mod);
+            recipe.AddIngredient(ItemID.CopperBar, 3);
+            recipe.AddIngredient(ItemID.LeadBar, 1);
+            recipe.AddTile(TileID.Anvils);
+            recipe.SetResult(ItemID.Aglet);
+            recipe.AddRecipe();
+
+            recipe = new ModRecipe(mod);
+            recipe.AddIngredient(ItemID.TinBar, 3);
+            recipe.AddIngredient(ItemID.IronBar, 1);
+            recipe.AddTile(TileID.Anvils);
+            recipe.SetResult(ItemID.Aglet);
+            recipe.AddRecipe();
+
+            recipe = new ModRecipe(mod);
+            recipe.AddIngredient(ItemID.TinBar, 3);
+            recipe.AddIngredient(ItemID.LeadBar, 1);
+            recipe.AddTile(TileID.Anvils);
+            recipe.SetResult(ItemID.Aglet);
+            recipe.AddRecipe();
+
+            ///////////////////////////////////////////////////////////////////
 
             recipe = new ModRecipe(mod);
             recipe.AddIngredient(ItemID.Leather, 8);
@@ -102,14 +129,27 @@ namespace AlexsAssortedArsenal
             recipe.SetResult(ItemID.ManaRegenerationBand);
             recipe.AddRecipe();
 
+            ////////////////////////////////////////////////////////////////////
+
             recipe = new ModRecipe(mod);
             recipe.AddIngredient(ItemID.Wood, 100);
             recipe.AddIngredient(ItemID.Gel, 75);
-            recipe.AddRecipeGroup("AlexsAssortedArsenal:Copper or Tin Bar", 15);
+            recipe.AddIngredient(ItemID.CopperBar, 15);
             recipe.AddIngredient(ItemID.FallenStar, 5);
             recipe.AddTile(TileID.WorkBenches);
             recipe.SetResult(ItemID.SlimeStaff);
             recipe.AddRecipe();
+
+            recipe = new ModRecipe(mod);
+            recipe.AddIngredient(ItemID.Wood, 100);
+            recipe.AddIngredient(ItemID.Gel, 75);
+            recipe.AddIngredient(ItemID.TinBar, 15);
+            recipe.AddIngredient(ItemID.FallenStar, 5);
+            recipe.AddTile(TileID.WorkBenches);
+            recipe.SetResult(ItemID.SlimeStaff);
+            recipe.AddRecipe();
+
+            ////////////////////////////////////////////////////////////////////
 
             recipe = new ModRecipe(mod);
             recipe.AddIngredient(ItemID.LightsBane, 1);
@@ -128,6 +168,8 @@ namespace AlexsAssortedArsenal
             recipe.AddTile(TileID.DemonAltar);
             recipe.SetResult(ItemID.NightsEdge);
             recipe.AddRecipe();
+
+            //--------------------MOD ITEM RECIPES--------------------
         }    
     }
 }
