@@ -70,6 +70,7 @@ namespace AlexsAssortedArsenal
 
         public override void Load()
         {
+            Items.Accessories.Movement.CloakHook.Load();
         }
 
         public static AlexsAssortedArsenal Instance { get; private set; }
