@@ -30,7 +30,7 @@ namespace AlexsAssortedArsenal.Items
             item.UseSound = SoundID.Item1;
             item.autoReuse = false;
             item.noUseGraphic = true;
-            item.shoot = mod.ProjectileType("CobaltYoyoProj");
+            item.shoot = mod.ProjectileType("OrichalcumYoyoProj");
             item.crit = 4;
 
             ItemID.Sets.Yoyo[item.type] = true;

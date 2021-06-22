@@ -32,7 +32,15 @@ namespace AlexsAssortedArsenal.Items
             ModRecipe recipe = new ModRecipe(mod);
             recipe.AddIngredient(mod, "SapphireHorn", 1);
             recipe.AddIngredient(ItemID.SharkToothNecklace, 1);
-            recipe.AddRecipeGroup("AlexsAssortedArsenal:Gold or Platinum Bar", 5);
+            recipe.AddIngredient(ItemID.GoldBar, 5);
+            recipe.AddTile(TileID.Anvils);
+            recipe.SetResult(this);
+            recipe.AddRecipe();
+
+            recipe = new ModRecipe(mod);
+            recipe.AddIngredient(mod, "SapphireHorn", 1);
+            recipe.AddIngredient(ItemID.SharkToothNecklace, 1);
+            recipe.AddIngredient(ItemID.PlatinumBar, 5);
             recipe.AddTile(TileID.Anvils);
             recipe.SetResult(this);
             recipe.AddRecipe();

@@ -45,7 +45,15 @@ namespace AlexsAssortedArsenal.Items
             ModRecipe recipe = new ModRecipe(mod);
             recipe.AddIngredient(ItemID.FlintlockPistol, 1);
             recipe.AddIngredient(mod, "UnusualMetalChunk", 3);
-            recipe.AddRecipeGroup("AlexsAssortedArsenal:Gold or Platinum Bar", 8);
+            recipe.AddIngredient(ItemID.GoldBar, 8);
+            recipe.AddTile(TileID.Anvils);
+            recipe.SetResult(this);
+            recipe.AddRecipe();
+
+            recipe = new ModRecipe(mod);
+            recipe.AddIngredient(ItemID.FlintlockPistol, 1);
+            recipe.AddIngredient(mod, "UnusualMetalChunk", 3);
+            recipe.AddIngredient(ItemID.PlatinumBar, 8);
             recipe.AddTile(TileID.Anvils);
             recipe.SetResult(this);
             recipe.AddRecipe();

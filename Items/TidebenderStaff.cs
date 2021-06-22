@@ -59,11 +59,20 @@ namespace AlexsAssortedArsenal.Items
 			ModRecipe recipe = new ModRecipe(mod);
             recipe.AddIngredient(ItemID.AquaScepter, 1);
             recipe.AddIngredient(ItemID.WaterBolt, 1);
-            recipe.AddRecipeGroup("AlexsAssortedArsenal:Gold or Platinum Bar", 8);
+            recipe.AddIngredient(ItemID.GoldBar, 8);
             recipe.AddIngredient(ItemID.SoulofNight, 12);
             recipe.AddTile(TileID.Anvils);
 			recipe.SetResult(this);
 			recipe.AddRecipe();
-		}
+
+            recipe = new ModRecipe(mod);
+            recipe.AddIngredient(ItemID.AquaScepter, 1);
+            recipe.AddIngredient(ItemID.WaterBolt, 1);
+            recipe.AddIngredient(ItemID.PlatinumBar, 8);
+            recipe.AddIngredient(ItemID.SoulofNight, 12);
+            recipe.AddTile(TileID.Anvils);
+            recipe.SetResult(this);
+            recipe.AddRecipe();
+        }
 	}
 }

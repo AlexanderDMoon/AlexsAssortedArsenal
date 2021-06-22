@@ -65,7 +65,7 @@ namespace AlexsAssortedArsenal.Items
             recipe.AddIngredient(ItemID.Shotgun, 1);
             recipe.AddIngredient(ItemID.ChlorophyteBar, 5);
             recipe.AddIngredient(ItemID.SoulofNight, 8);
-            recipe.AddIngredient(ItemID.CursedFlames, 15);
+            recipe.AddIngredient(ItemID.CursedFlame, 15);
             recipe.AddTile(TileID.MythrilAnvil);
             recipe.SetResult(this);
             recipe.AddRecipe();

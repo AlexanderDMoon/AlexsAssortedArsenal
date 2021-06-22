@@ -71,9 +71,86 @@ namespace AlexsAssortedArsenal.Items
         public override void AddRecipes()
         {
             ModRecipe recipe = new ModRecipe(mod);
-            recipe.AddRecipeGroup("AlexsAssortedArsenal:Any GeMP-44", 1);
+            recipe.AddIngredient(mod, "GeMP44AC", 1);
             recipe.AddIngredient(ItemID.OnyxBlaster, 1);
-            recipe.AddIngredient(ItemID.SoulofMight, 15);
+            recipe.AddIngredient(ItemID.SoulofSight, 15);
+            recipe.AddIngredient(mod, "FairiumBar", 12);
+            recipe.AddIngredient(ItemID.PearlstoneBlock, 150);
+            recipe.AddTile(TileID.MythrilAnvil);
+            recipe.AddTile(TileID.AdamantiteForge);
+            recipe.SetResult(this);
+            recipe.AddRecipe();
+
+            recipe = new ModRecipe(mod);
+            recipe.AddIngredient(mod, "GeMP44TT", 1);
+            recipe.AddIngredient(ItemID.OnyxBlaster, 1);
+            recipe.AddIngredient(ItemID.SoulofSight, 15);
+            recipe.AddIngredient(mod, "FairiumBar", 12);
+            recipe.AddIngredient(ItemID.PearlstoneBlock, 150);
+            recipe.AddTile(TileID.MythrilAnvil);
+            recipe.AddTile(TileID.AdamantiteForge);
+            recipe.SetResult(this);
+            recipe.AddRecipe();
+
+            recipe = new ModRecipe(mod);
+            recipe.AddIngredient(mod, "GeMP44AI", 1);
+            recipe.AddIngredient(ItemID.OnyxBlaster, 1);
+            recipe.AddIngredient(ItemID.SoulofSight, 15);
+            recipe.AddIngredient(mod, "FairiumBar", 12);
+            recipe.AddIngredient(ItemID.PearlstoneBlock, 150);
+            recipe.AddTile(TileID.MythrilAnvil);
+            recipe.AddTile(TileID.AdamantiteForge);
+            recipe.SetResult(this);
+            recipe.AddRecipe();
+
+            recipe = new ModRecipe(mod);
+            recipe.AddIngredient(mod, "GeMP44PL", 1);
+            recipe.AddIngredient(ItemID.OnyxBlaster, 1);
+            recipe.AddIngredient(ItemID.SoulofSight, 15);
+            recipe.AddIngredient(mod, "FairiumBar", 12);
+            recipe.AddIngredient(ItemID.PearlstoneBlock, 150);
+            recipe.AddTile(TileID.MythrilAnvil);
+            recipe.AddTile(TileID.AdamantiteForge);
+            recipe.SetResult(this);
+            recipe.AddRecipe();
+
+            recipe = new ModRecipe(mod);
+            recipe.AddIngredient(mod, "GeMP44SS", 1);
+            recipe.AddIngredient(ItemID.OnyxBlaster, 1);
+            recipe.AddIngredient(ItemID.SoulofSight, 15);
+            recipe.AddIngredient(mod, "FairiumBar", 12);
+            recipe.AddIngredient(ItemID.PearlstoneBlock, 150);
+            recipe.AddTile(TileID.MythrilAnvil);
+            recipe.AddTile(TileID.AdamantiteForge);
+            recipe.SetResult(this);
+            recipe.AddRecipe();
+
+            recipe = new ModRecipe(mod);
+            recipe.AddIngredient(mod, "GeMP44ET", 1);
+            recipe.AddIngredient(ItemID.OnyxBlaster, 1);
+            recipe.AddIngredient(ItemID.SoulofSight, 15);
+            recipe.AddIngredient(mod, "FairiumBar", 12);
+            recipe.AddIngredient(ItemID.PearlstoneBlock, 150);
+            recipe.AddTile(TileID.MythrilAnvil);
+            recipe.AddTile(TileID.AdamantiteForge);
+            recipe.SetResult(this);
+            recipe.AddRecipe();
+
+            recipe = new ModRecipe(mod);
+            recipe.AddIngredient(mod, "GeMP44RG", 1);
+            recipe.AddIngredient(ItemID.OnyxBlaster, 1);
+            recipe.AddIngredient(ItemID.SoulofSight, 15);
+            recipe.AddIngredient(mod, "FairiumBar", 12);
+            recipe.AddIngredient(ItemID.PearlstoneBlock, 150);
+            recipe.AddTile(TileID.MythrilAnvil);
+            recipe.AddTile(TileID.AdamantiteForge);
+            recipe.SetResult(this);
+            recipe.AddRecipe();
+
+            recipe = new ModRecipe(mod);
+            recipe.AddIngredient(mod, "GeMP44DP", 1);
+            recipe.AddIngredient(ItemID.OnyxBlaster, 1);
+            recipe.AddIngredient(ItemID.SoulofSight, 15);
             recipe.AddIngredient(mod, "FairiumBar", 12);
             recipe.AddIngredient(ItemID.PearlstoneBlock, 150);
             recipe.AddTile(TileID.MythrilAnvil);

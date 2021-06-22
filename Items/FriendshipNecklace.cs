@@ -42,7 +42,14 @@ namespace AlexsAssortedArsenal.Items
 		{
             ModRecipe recipe = new ModRecipe(mod);
             recipe.AddIngredient(ItemID.LifeCrystal, 1);
-            recipe.AddRecipeGroup("AlexsAssortedArsenal:Gold or Platinum Bar", 2);
+            recipe.AddIngredient(ItemID.GoldBar, 2);
+            recipe.AddTile(TileID.Anvils);
+            recipe.SetResult(this);
+            recipe.AddRecipe();
+
+            recipe = new ModRecipe(mod);
+            recipe.AddIngredient(ItemID.LifeCrystal, 1);
+            recipe.AddIngredient(ItemID.PlatinumBar, 2);
             recipe.AddTile(TileID.Anvils);
             recipe.SetResult(this);
             recipe.AddRecipe();

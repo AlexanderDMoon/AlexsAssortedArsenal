@@ -1,12 +1,16 @@
 ﻿using static AlexsAssortedArsenal.Items.Accessories.Movement.DiscordCloak;
 
-namespace AlexsAssortedArsenal.Items.Accessories.Movement {
-    static class CloakHook {
-        internal static void Load() {
+namespace AlexsAssortedArsenal.Items.Accessories.Movement
+{
+    static class CloakHook
+    {
+        internal static void Load()
+        {
             On.Terraria.Player.KeyDoubleTap += CloakHooker; // vanilla method i want to hook into!!!!!
         }
 
-        private static void CloakHooker(On.Terraria.Player.orig_KeyDoubleTap orig, Terraria.Player self, int keyDir) {
+        private static void CloakHooker(On.Terraria.Player.orig_KeyDoubleTap orig, Terraria.Player self, int keyDir)
+        {
             orig.Invoke(self, keyDir); // call the original method, then run my code
 
             if (self.HasBuff(Terraria.ID.BuffID.ChaosState)) 

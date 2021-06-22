@@ -62,10 +62,19 @@ namespace AlexsAssortedArsenal.Items
             recipe.AddIngredient(ItemID.IceBlade, 1);
             recipe.AddIngredient(ItemID.Starfury, 1);
             recipe.AddIngredient(ItemID.Shiverthorn, 3);
-            recipe.AddRecipeGroup("AlexsAssortedArsenal:Silver or Tungsten Bar", 5);
+            recipe.AddIngredient(ItemID.SilverBar, 5);
 			recipe.AddTile(TileID.Anvils);
 			recipe.SetResult(this);
 			recipe.AddRecipe();
-		}
+
+            recipe = new ModRecipe(mod);
+            recipe.AddIngredient(ItemID.IceBlade, 1);
+            recipe.AddIngredient(ItemID.Starfury, 1);
+            recipe.AddIngredient(ItemID.Shiverthorn, 3);
+            recipe.AddIngredient(ItemID.TungstenBar, 5);
+            recipe.AddTile(TileID.Anvils);
+            recipe.SetResult(this);
+            recipe.AddRecipe();
+        }
 	}
 }

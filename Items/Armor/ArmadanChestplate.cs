@@ -48,13 +48,61 @@ namespace AlexsAssortedArsenal.Items.Armor
         public override void AddRecipes()
 		{
 			ModRecipe recipe = new ModRecipe(mod);
-            recipe.AddRecipeGroup("AlexsAssortedArsenal:Gold or Platinum Chestpiece", 1);
-            recipe.AddRecipeGroup("AlexsAssortedArsenal:Shadowscale or Crimson Chestpiece", 1);
+            recipe.AddIngredient(ItemID.GoldChainmail, 1);
+            recipe.AddIngredient(ItemID.ShadowScalemail, 1);
             recipe.AddIngredient(ItemID.SunplateBlock, 20);
             recipe.AddIngredient(ItemID.Feather, 3);
             recipe.AddTile(TileID.SkyMill);
-			recipe.SetResult(this);
-			recipe.AddRecipe();
-		}
-	}
+            recipe.SetResult(this);
+            recipe.AddRecipe();
+
+            recipe = new ModRecipe(mod);
+            recipe.AddIngredient(ItemID.GoldChainmail, 1);
+            recipe.AddIngredient(ItemID.AncientShadowScalemail, 1);
+            recipe.AddIngredient(ItemID.SunplateBlock, 20);
+            recipe.AddIngredient(ItemID.Feather, 3);
+            recipe.AddTile(TileID.SkyMill);
+            recipe.SetResult(this);
+            recipe.AddRecipe();
+
+            recipe = new ModRecipe(mod);
+            recipe.AddIngredient(ItemID.GoldChainmail, 1);
+            recipe.AddIngredient(ItemID.CrimsonScalemail, 1);
+            recipe.AddIngredient(ItemID.SunplateBlock, 20);
+            recipe.AddIngredient(ItemID.Feather, 3);
+            recipe.AddTile(TileID.SkyMill);
+            recipe.SetResult(this);
+            recipe.AddRecipe();
+
+            //////////////////////////////////////////////////////////////////
+
+            recipe = new ModRecipe(mod);
+            recipe.AddIngredient(ItemID.PlatinumChainmail, 1);
+            recipe.AddIngredient(ItemID.ShadowScalemail, 1);
+            recipe.AddIngredient(ItemID.SunplateBlock, 20);
+            recipe.AddIngredient(ItemID.Feather, 3);
+            recipe.AddTile(TileID.SkyMill);
+            recipe.SetResult(this);
+            recipe.AddRecipe();
+
+            recipe = new ModRecipe(mod);
+            recipe.AddIngredient(ItemID.PlatinumChainmail, 1);
+            recipe.AddIngredient(ItemID.AncientShadowScalemail, 1);
+            recipe.AddIngredient(ItemID.SunplateBlock, 20);
+            recipe.AddIngredient(ItemID.Feather, 3);
+            recipe.AddTile(TileID.SkyMill);
+            recipe.SetResult(this);
+            recipe.AddRecipe();
+
+            recipe = new ModRecipe(mod);
+            recipe.AddIngredient(ItemID.PlatinumChainmail, 1);
+            recipe.AddIngredient(ItemID.CrimsonScalemail, 1);
+            recipe.AddIngredient(ItemID.SunplateBlock, 20);
+            recipe.AddIngredient(ItemID.Feather, 3);
+            recipe.AddTile(TileID.SkyMill);
+            recipe.SetResult(this);
+            recipe.AddRecipe();
+
+        }
+    }
 }

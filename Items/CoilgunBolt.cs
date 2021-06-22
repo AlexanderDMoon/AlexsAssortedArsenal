@@ -31,7 +31,14 @@ namespace AlexsAssortedArsenal.Items
         public override void AddRecipes()
         {
             ModRecipe recipe = new ModRecipe(mod);
-            recipe.AddRecipeGroup("AlexsAssortedArsenal:Adamantite or Titanium Bar", 1);
+            recipe.AddIngredient(ItemID.AdamantiteBar, 1);
+            recipe.AddTile(TileID.AdamantiteForge);
+            recipe.AddTile(TileID.MythrilAnvil);
+            recipe.SetResult(this, 75);
+            recipe.AddRecipe();
+
+            recipe = new ModRecipe(mod);
+            recipe.AddIngredient(ItemID.TitaniumBar, 1);
             recipe.AddTile(TileID.AdamantiteForge);
             recipe.AddTile(TileID.MythrilAnvil);
             recipe.SetResult(this, 75);

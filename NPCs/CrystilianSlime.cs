@@ -30,7 +30,7 @@ namespace AlexsAssortedArsenal.NPCs
 
         public override float SpawnChance(NPCSpawnInfo spawnInfo)
         {
-            return SpawnCondition.OverworldHallow.Chance * 0.2f;
+            return SpawnCondition.OverworldHallow.Chance * 0.20f;
         }
 
         public override void NPCLoot()

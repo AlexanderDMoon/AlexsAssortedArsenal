@@ -56,7 +56,15 @@ namespace AlexsAssortedArsenal.Items
             ModRecipe recipe = new ModRecipe(mod);
             recipe.AddIngredient(ItemID.BreakerBlade);
             recipe.AddIngredient(ItemID.SoulofNight, 10);
-            recipe.AddRecipeGroup("AlexsAssortedArsenal:Cobalt or Palladium Bar", 8);
+            recipe.AddIngredient(ItemID.CobaltBar, 8);
+            recipe.AddTile(TileID.Anvils);
+            recipe.SetResult(this);
+            recipe.AddRecipe();
+
+            recipe = new ModRecipe(mod);
+            recipe.AddIngredient(ItemID.BreakerBlade);
+            recipe.AddIngredient(ItemID.SoulofNight, 10);
+            recipe.AddIngredient(ItemID.PalladiumBar, 8);
             recipe.AddTile(TileID.Anvils);
             recipe.SetResult(this);
             recipe.AddRecipe();

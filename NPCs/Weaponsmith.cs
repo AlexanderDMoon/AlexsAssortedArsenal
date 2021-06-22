@@ -328,9 +328,6 @@ namespace ExampleMod.NPCs
                 nextSlot++;
                 shop.item[nextSlot].SetDefaults(ItemID.MedusaHead);
                 nextSlot++;
-            }
-            if (NPC.downedPlantBoss)
-            {
                 shop.item[nextSlot].SetDefaults(ItemID.Uzi);
                 shop.item[nextSlot].shopCustomPrice = 750000;
                 nextSlot++;

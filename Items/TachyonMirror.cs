@@ -43,7 +43,16 @@ namespace AlexsAssortedArsenal.Items
         {
             ModRecipe recipe = new ModRecipe(mod);
             recipe.AddIngredient(mod, "TachyonLensUnstable", 1);
-            recipe.AddRecipeGroup("AlexsAssortedArsenal:Magic Mirror or Ice Mirror", 1);
+            recipe.AddIngredient(ItemID.MagicMirror, 1);
+            recipe.AddIngredient(ItemID.LihzahrdPowerCell, 5);
+            recipe.AddIngredient(ItemID.Ectoplasm, 15);
+            recipe.AddTile(TileID.MythrilAnvil);
+            recipe.SetResult(this);
+            recipe.AddRecipe();
+
+            recipe = new ModRecipe(mod);
+            recipe.AddIngredient(mod, "TachyonLensUnstable", 1);
+            recipe.AddIngredient(ItemID.IceMirror, 1);
             recipe.AddIngredient(ItemID.LihzahrdPowerCell, 5);
             recipe.AddIngredient(ItemID.Ectoplasm, 15);
             recipe.AddTile(TileID.MythrilAnvil);

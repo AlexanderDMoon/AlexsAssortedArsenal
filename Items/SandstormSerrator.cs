@@ -42,12 +42,21 @@ namespace AlexsAssortedArsenal.Items
 		{
 			ModRecipe recipe = new ModRecipe(mod);
             recipe.AddIngredient(ItemID.AntlionClaw, 1);
-            recipe.AddRecipeGroup("AlexsAssortedArsenal:Demonite or Crimtane Bar", 5);
+            recipe.AddIngredient(ItemID.DemoniteBar, 5);
             recipe.AddIngredient(ItemID.Amber, 8);
             recipe.AddIngredient(ItemID.FossilOre, 12);
             recipe.AddTile(TileID.Anvils);
 			recipe.SetResult(this);
 			recipe.AddRecipe();
-		}
+
+            recipe = new ModRecipe(mod);
+            recipe.AddIngredient(ItemID.AntlionClaw, 1);
+            recipe.AddIngredient(ItemID.CrimtaneBar, 5);
+            recipe.AddIngredient(ItemID.Amber, 8);
+            recipe.AddIngredient(ItemID.FossilOre, 12);
+            recipe.AddTile(TileID.Anvils);
+            recipe.SetResult(this);
+            recipe.AddRecipe();
+        }
 	}
 }

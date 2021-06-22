@@ -36,11 +36,21 @@ namespace AlexsAssortedArsenal.Items
             recipe.AddIngredient(ItemID.BreakerBlade, 1);
             recipe.AddIngredient(mod, "ArmadanBroadsword", 1);
             recipe.AddIngredient(mod, "CrystilianShard", 12);
-            recipe.AddRecipeGroup("AlexsAssortedArsenal:Cobalt or Palladium Bar", 5);
+            recipe.AddIngredient(ItemID.CobaltBar, 5);
             recipe.AddIngredient(ItemID.SoulofLight, 3);
-			recipe.AddTile(TileID.MythrilAnvil);
-			recipe.SetResult(this);
-			recipe.AddRecipe();
-		}
+            recipe.AddTile(TileID.MythrilAnvil);
+            recipe.SetResult(this);
+            recipe.AddRecipe();
+
+            recipe = new ModRecipe(mod);
+            recipe.AddIngredient(ItemID.BreakerBlade, 1);
+            recipe.AddIngredient(mod, "ArmadanBroadsword", 1);
+            recipe.AddIngredient(mod, "CrystilianShard", 12);
+            recipe.AddIngredient(ItemID.PalladiumBar, 5);
+            recipe.AddIngredient(ItemID.SoulofLight, 3);
+            recipe.AddTile(TileID.MythrilAnvil);
+            recipe.SetResult(this);
+            recipe.AddRecipe();
+        }
 	}
 }

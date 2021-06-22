@@ -62,7 +62,14 @@ namespace AlexsAssortedArsenal.Items
         {
             ModRecipe recipe = new ModRecipe(mod);
             recipe.AddIngredient(ItemID.FlareGun, 1);
-            recipe.AddRecipeGroup("AlexsAssortedArsenal:Iron or Lead Bar", 5);
+            recipe.AddIngredient(ItemID.IronBar, 5);
+            recipe.AddTile(TileID.Anvils);
+            recipe.SetResult(this);
+            recipe.AddRecipe();
+
+            recipe = new ModRecipe(mod);
+            recipe.AddIngredient(ItemID.FlareGun, 1);
+            recipe.AddIngredient(ItemID.LeadBar, 5);
             recipe.AddTile(TileID.Anvils);
             recipe.SetResult(this);
             recipe.AddRecipe();

@@ -33,12 +33,20 @@ namespace AlexsAssortedArsenal.Items
         public override void AddRecipes()
 		{
 			ModRecipe recipe = new ModRecipe(mod);
-            recipe.AddRecipeGroup("AlexsAssortedArsenal:Light's Bane or Blood Butcherer", 1);
+            recipe.AddIngredient(ItemID.LightsBane, 1);
             recipe.AddIngredient(ItemID.Feather, 6);
             recipe.AddIngredient(ItemID.SunplateBlock, 15);
 			recipe.AddTile(TileID.SkyMill);
 			recipe.SetResult(this);
 			recipe.AddRecipe();
-		}
+
+            recipe = new ModRecipe(mod);
+            recipe.AddIngredient(ItemID.BloodButcherer, 1);
+            recipe.AddIngredient(ItemID.Feather, 6);
+            recipe.AddIngredient(ItemID.SunplateBlock, 15);
+            recipe.AddTile(TileID.SkyMill);
+            recipe.SetResult(this);
+            recipe.AddRecipe();
+        }
 	}
 }

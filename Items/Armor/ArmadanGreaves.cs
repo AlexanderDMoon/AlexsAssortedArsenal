@@ -47,7 +47,16 @@ namespace AlexsAssortedArsenal.Items.Armor
         public override void AddRecipes()
         {
             ModRecipe recipe = new ModRecipe(mod);
-            recipe.AddRecipeGroup("AlexsAssortedArsenal:Gold or Platinum Greaves", 1);
+            recipe.AddIngredient(ItemID.GoldGreaves, 1);
+            recipe.AddIngredient(ItemID.NecroGreaves, 1);
+            recipe.AddIngredient(ItemID.SunplateBlock, 16);
+            recipe.AddIngredient(ItemID.Feather, 2);
+            recipe.AddTile(TileID.SkyMill);
+            recipe.SetResult(this);
+            recipe.AddRecipe();
+
+            recipe = new ModRecipe(mod);
+            recipe.AddIngredient(ItemID.PlatinumGreaves, 1);
             recipe.AddIngredient(ItemID.NecroGreaves, 1);
             recipe.AddIngredient(ItemID.SunplateBlock, 16);
             recipe.AddIngredient(ItemID.Feather, 2);

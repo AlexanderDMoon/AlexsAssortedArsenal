@@ -24,13 +24,22 @@ namespace AlexsAssortedArsenal.Items
 		public override void AddRecipes()
 		{
 			ModRecipe recipe = new ModRecipe(mod);
-            recipe.AddRecipeGroup("AlexsAssortedArsenal:Iron or Lead Bar", 2);
+            recipe.AddIngredient(ItemID.IronBar, 2);
             recipe.AddIngredient(ItemID.HallowedBar, 1);
             recipe.AddIngredient(ItemID.SoulofLight, 1);
             recipe.AddIngredient(ItemID.SoulofNight, 1);
             recipe.AddTile(TileID.AdamantiteForge);
-			recipe.SetResult(this, 2);
-			recipe.AddRecipe();
-		}
+            recipe.SetResult(this, 2);
+            recipe.AddRecipe();
+
+            recipe = new ModRecipe(mod);
+            recipe.AddIngredient(ItemID.LeadBar, 2);
+            recipe.AddIngredient(ItemID.HallowedBar, 1);
+            recipe.AddIngredient(ItemID.SoulofLight, 1);
+            recipe.AddIngredient(ItemID.SoulofNight, 1);
+            recipe.AddTile(TileID.AdamantiteForge);
+            recipe.SetResult(this, 2);
+            recipe.AddRecipe();
+        }
 	}
 }

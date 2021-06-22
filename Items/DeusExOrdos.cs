@@ -13,7 +13,7 @@ namespace AlexsAssortedArsenal.Items
         public override void SetStaticDefaults()
         {
             DisplayName.SetDefault("Deus Ex Ordos");
-            Tooltip.SetDefault("Fires a purifying beam of energy that decimates Hallowed, Corrupt and Crimson enemies. \n'Be not afraid.' \nLegendary Weapon");
+            Tooltip.SetDefault("Fires a purifying beam of energy that decimates Hallowed, Corrupt and Crimson enemies. \n'Return to dust!' \nLegendary Weapon");
         }
 
         public override void SetDefaults()

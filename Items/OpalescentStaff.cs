@@ -73,7 +73,95 @@ namespace AlexsAssortedArsenal.Items
         public override void AddRecipes()
         {
             ModRecipe recipe = new ModRecipe(mod);
-            recipe.AddRecipeGroup("AlexsAssortedArsenal:Any Metal Staff", 1);
+            recipe.AddIngredient(ItemID.AmethystStaff, 1);
+            recipe.AddIngredient(ItemID.RainbowRod, 1);
+            recipe.AddIngredient(ItemID.SoulofSight, 15);
+            recipe.AddIngredient(mod, "FairiumBar", 12);
+            recipe.AddIngredient(ItemID.PearlstoneBlock, 150);
+            recipe.AddTile(TileID.MythrilAnvil);
+            recipe.AddTile(TileID.AdamantiteForge);
+            recipe.SetResult(this);
+            recipe.AddRecipe();
+
+            recipe = new ModRecipe(mod);
+            recipe.AddIngredient(ItemID.TopazStaff, 1);
+            recipe.AddIngredient(ItemID.RainbowRod, 1);
+            recipe.AddIngredient(ItemID.SoulofSight, 15);
+            recipe.AddIngredient(mod, "FairiumBar", 12);
+            recipe.AddIngredient(ItemID.PearlstoneBlock, 150);
+            recipe.AddTile(TileID.MythrilAnvil);
+            recipe.AddTile(TileID.AdamantiteForge);
+            recipe.SetResult(this);
+            recipe.AddRecipe();
+
+            recipe = new ModRecipe(mod);
+            recipe.AddIngredient(mod, "IronStaff", 1);
+            recipe.AddIngredient(ItemID.RainbowRod, 1);
+            recipe.AddIngredient(ItemID.SoulofSight, 15);
+            recipe.AddIngredient(mod, "FairiumBar", 12);
+            recipe.AddIngredient(ItemID.PearlstoneBlock, 150);
+            recipe.AddTile(TileID.MythrilAnvil);
+            recipe.AddTile(TileID.AdamantiteForge);
+            recipe.SetResult(this);
+            recipe.AddRecipe();
+
+            recipe = new ModRecipe(mod);
+            recipe.AddIngredient(mod, "LeadStaff", 1);
+            recipe.AddIngredient(ItemID.RainbowRod, 1);
+            recipe.AddIngredient(ItemID.SoulofSight, 15);
+            recipe.AddIngredient(mod, "FairiumBar", 12);
+            recipe.AddIngredient(ItemID.PearlstoneBlock, 150);
+            recipe.AddTile(TileID.MythrilAnvil);
+            recipe.AddTile(TileID.AdamantiteForge);
+            recipe.SetResult(this);
+            recipe.AddRecipe();
+
+            recipe = new ModRecipe(mod);
+            recipe.AddIngredient(ItemID.SapphireStaff, 1);
+            recipe.AddIngredient(ItemID.RainbowRod, 1);
+            recipe.AddIngredient(ItemID.SoulofSight, 15);
+            recipe.AddIngredient(mod, "FairiumBar", 12);
+            recipe.AddIngredient(ItemID.PearlstoneBlock, 150);
+            recipe.AddTile(TileID.MythrilAnvil);
+            recipe.AddTile(TileID.AdamantiteForge);
+            recipe.SetResult(this);
+            recipe.AddRecipe();
+
+            recipe = new ModRecipe(mod);
+            recipe.AddIngredient(ItemID.EmeraldStaff, 1);
+            recipe.AddIngredient(ItemID.RainbowRod, 1);
+            recipe.AddIngredient(ItemID.SoulofSight, 15);
+            recipe.AddIngredient(mod, "FairiumBar", 12);
+            recipe.AddIngredient(ItemID.PearlstoneBlock, 150);
+            recipe.AddTile(TileID.MythrilAnvil);
+            recipe.AddTile(TileID.AdamantiteForge);
+            recipe.SetResult(this);
+            recipe.AddRecipe();
+
+            recipe = new ModRecipe(mod);
+            recipe.AddIngredient(ItemID.RubyStaff, 1);
+            recipe.AddIngredient(ItemID.RainbowRod, 1);
+            recipe.AddIngredient(ItemID.SoulofSight, 15);
+            recipe.AddIngredient(mod, "FairiumBar", 12);
+            recipe.AddIngredient(ItemID.PearlstoneBlock, 150);
+            recipe.AddTile(TileID.MythrilAnvil);
+            recipe.AddTile(TileID.AdamantiteForge);
+            recipe.SetResult(this);
+            recipe.AddRecipe();
+
+            recipe = new ModRecipe(mod);
+            recipe.AddIngredient(ItemID.DiamondStaff, 1);
+            recipe.AddIngredient(ItemID.RainbowRod, 1);
+            recipe.AddIngredient(ItemID.SoulofSight, 15);
+            recipe.AddIngredient(mod, "FairiumBar", 12);
+            recipe.AddIngredient(ItemID.PearlstoneBlock, 150);
+            recipe.AddTile(TileID.MythrilAnvil);
+            recipe.AddTile(TileID.AdamantiteForge);
+            recipe.SetResult(this);
+            recipe.AddRecipe();
+
+            recipe = new ModRecipe(mod);
+            recipe.AddIngredient(ItemID.AmberStaff, 1);
             recipe.AddIngredient(ItemID.RainbowRod, 1);
             recipe.AddIngredient(ItemID.SoulofSight, 15);
             recipe.AddIngredient(mod, "FairiumBar", 12);

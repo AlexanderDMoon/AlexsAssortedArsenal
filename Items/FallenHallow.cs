@@ -48,9 +48,176 @@ namespace AlexsAssortedArsenal.Items
             recipe.AddIngredient(ItemID.UnicornHorn, 10);
             recipe.AddIngredient(ItemID.SoulofLight, 8);
             recipe.AddIngredient(ItemID.SoulofNight, 8);
-            recipe.AddRecipeGroup("AlexsAssortedArsenal:Adamantite or Titanium Bar", 5);
+            recipe.AddIngredient(ItemID.AdamantiteBar, 5);
             recipe.AddIngredient(ItemID.CrystalSerpent, 1);
-            recipe.AddRecipeGroup("AlexsAssortedArsenal:Star Striker", 1);
+            recipe.AddIngredient(mod, "BlueStarStriker", 1);
+            recipe.AddTile(TileID.MythrilAnvil);
+            recipe.SetResult(this);
+            recipe.AddRecipe();
+
+            recipe = new ModRecipe(mod);
+            recipe.AddIngredient(ItemID.UnicornHorn, 10);
+            recipe.AddIngredient(ItemID.SoulofLight, 8);
+            recipe.AddIngredient(ItemID.SoulofNight, 8);
+            recipe.AddIngredient(ItemID.AdamantiteBar, 5);
+            recipe.AddIngredient(ItemID.CrystalSerpent, 1);
+            recipe.AddIngredient(mod, "GreenStarStriker", 1);
+            recipe.AddTile(TileID.MythrilAnvil);
+            recipe.SetResult(this);
+            recipe.AddRecipe();
+
+            recipe = new ModRecipe(mod);
+            recipe.AddIngredient(ItemID.UnicornHorn, 10);
+            recipe.AddIngredient(ItemID.SoulofLight, 8);
+            recipe.AddIngredient(ItemID.SoulofNight, 8);
+            recipe.AddIngredient(ItemID.AdamantiteBar, 5);
+            recipe.AddIngredient(ItemID.CrystalSerpent, 1);
+            recipe.AddIngredient(mod, "RedStarStriker", 1);
+            recipe.AddTile(TileID.MythrilAnvil);
+            recipe.SetResult(this);
+            recipe.AddRecipe();
+
+            recipe = new ModRecipe(mod);
+            recipe.AddIngredient(ItemID.UnicornHorn, 10);
+            recipe.AddIngredient(ItemID.SoulofLight, 8);
+            recipe.AddIngredient(ItemID.SoulofNight, 8);
+            recipe.AddIngredient(ItemID.AdamantiteBar, 5);
+            recipe.AddIngredient(ItemID.CrystalSerpent, 1);
+            recipe.AddIngredient(mod, "PurpleStarStriker", 1);
+            recipe.AddTile(TileID.MythrilAnvil);
+            recipe.SetResult(this);
+            recipe.AddRecipe();
+
+            recipe = new ModRecipe(mod);
+            recipe.AddIngredient(ItemID.UnicornHorn, 10);
+            recipe.AddIngredient(ItemID.SoulofLight, 8);
+            recipe.AddIngredient(ItemID.SoulofNight, 8);
+            recipe.AddIngredient(ItemID.AdamantiteBar, 5);
+            recipe.AddIngredient(ItemID.CrystalSerpent, 1);
+            recipe.AddIngredient(mod, "YellowStarStriker", 1);
+            recipe.AddTile(TileID.MythrilAnvil);
+            recipe.SetResult(this);
+            recipe.AddRecipe();
+
+            recipe = new ModRecipe(mod);
+            recipe.AddIngredient(ItemID.UnicornHorn, 10);
+            recipe.AddIngredient(ItemID.SoulofLight, 8);
+            recipe.AddIngredient(ItemID.SoulofNight, 8);
+            recipe.AddIngredient(ItemID.AdamantiteBar, 5);
+            recipe.AddIngredient(ItemID.CrystalSerpent, 1);
+            recipe.AddIngredient(mod, "WhiteStarStriker", 1);
+            recipe.AddTile(TileID.MythrilAnvil);
+            recipe.SetResult(this);
+            recipe.AddRecipe();
+
+            recipe = new ModRecipe(mod);
+            recipe.AddIngredient(ItemID.UnicornHorn, 10);
+            recipe.AddIngredient(ItemID.SoulofLight, 8);
+            recipe.AddIngredient(ItemID.SoulofNight, 8);
+            recipe.AddIngredient(ItemID.AdamantiteBar, 5);
+            recipe.AddIngredient(ItemID.CrystalSerpent, 1);
+            recipe.AddIngredient(mod, "AquamarineStarStriker", 1);
+            recipe.AddTile(TileID.MythrilAnvil);
+            recipe.SetResult(this);
+            recipe.AddRecipe();
+
+            recipe = new ModRecipe(mod);
+            recipe.AddIngredient(ItemID.UnicornHorn, 10);
+            recipe.AddIngredient(ItemID.SoulofLight, 8);
+            recipe.AddIngredient(ItemID.SoulofNight, 8);
+            recipe.AddIngredient(ItemID.AdamantiteBar, 5);
+            recipe.AddIngredient(ItemID.CrystalSerpent, 1);
+            recipe.AddIngredient(mod, "PenumbriteStarStriker", 1);
+            recipe.AddTile(TileID.MythrilAnvil);
+            recipe.SetResult(this);
+            recipe.AddRecipe();
+
+            //////////////////////////////////////////////////////////////////////////////
+
+            recipe = new ModRecipe(mod);
+            recipe.AddIngredient(ItemID.UnicornHorn, 10);
+            recipe.AddIngredient(ItemID.SoulofLight, 8);
+            recipe.AddIngredient(ItemID.SoulofNight, 8);
+            recipe.AddIngredient(ItemID.TitaniumBar, 5);
+            recipe.AddIngredient(ItemID.CrystalSerpent, 1);
+            recipe.AddIngredient(mod, "BlueStarStriker", 1);
+            recipe.AddTile(TileID.MythrilAnvil);
+            recipe.SetResult(this);
+            recipe.AddRecipe();
+
+            recipe = new ModRecipe(mod);
+            recipe.AddIngredient(ItemID.UnicornHorn, 10);
+            recipe.AddIngredient(ItemID.SoulofLight, 8);
+            recipe.AddIngredient(ItemID.SoulofNight, 8);
+            recipe.AddIngredient(ItemID.TitaniumBar, 5);
+            recipe.AddIngredient(ItemID.CrystalSerpent, 1);
+            recipe.AddIngredient(mod, "GreenStarStriker", 1);
+            recipe.AddTile(TileID.MythrilAnvil);
+            recipe.SetResult(this);
+            recipe.AddRecipe();
+
+            recipe = new ModRecipe(mod);
+            recipe.AddIngredient(ItemID.UnicornHorn, 10);
+            recipe.AddIngredient(ItemID.SoulofLight, 8);
+            recipe.AddIngredient(ItemID.SoulofNight, 8);
+            recipe.AddIngredient(ItemID.TitaniumBar, 5);
+            recipe.AddIngredient(ItemID.CrystalSerpent, 1);
+            recipe.AddIngredient(mod, "RedStarStriker", 1);
+            recipe.AddTile(TileID.MythrilAnvil);
+            recipe.SetResult(this);
+            recipe.AddRecipe();
+
+            recipe = new ModRecipe(mod);
+            recipe.AddIngredient(ItemID.UnicornHorn, 10);
+            recipe.AddIngredient(ItemID.SoulofLight, 8);
+            recipe.AddIngredient(ItemID.SoulofNight, 8);
+            recipe.AddIngredient(ItemID.TitaniumBar, 5);
+            recipe.AddIngredient(ItemID.CrystalSerpent, 1);
+            recipe.AddIngredient(mod, "PurpleStarStriker", 1);
+            recipe.AddTile(TileID.MythrilAnvil);
+            recipe.SetResult(this);
+            recipe.AddRecipe();
+
+            recipe = new ModRecipe(mod);
+            recipe.AddIngredient(ItemID.UnicornHorn, 10);
+            recipe.AddIngredient(ItemID.SoulofLight, 8);
+            recipe.AddIngredient(ItemID.SoulofNight, 8);
+            recipe.AddIngredient(ItemID.TitaniumBar, 5);
+            recipe.AddIngredient(ItemID.CrystalSerpent, 1);
+            recipe.AddIngredient(mod, "YellowStarStriker", 1);
+            recipe.AddTile(TileID.MythrilAnvil);
+            recipe.SetResult(this);
+            recipe.AddRecipe();
+
+            recipe = new ModRecipe(mod);
+            recipe.AddIngredient(ItemID.UnicornHorn, 10);
+            recipe.AddIngredient(ItemID.SoulofLight, 8);
+            recipe.AddIngredient(ItemID.SoulofNight, 8);
+            recipe.AddIngredient(ItemID.TitaniumBar, 5);
+            recipe.AddIngredient(ItemID.CrystalSerpent, 1);
+            recipe.AddIngredient(mod, "WhiteStarStriker", 1);
+            recipe.AddTile(TileID.MythrilAnvil);
+            recipe.SetResult(this);
+            recipe.AddRecipe();
+
+            recipe = new ModRecipe(mod);
+            recipe.AddIngredient(ItemID.UnicornHorn, 10);
+            recipe.AddIngredient(ItemID.SoulofLight, 8);
+            recipe.AddIngredient(ItemID.SoulofNight, 8);
+            recipe.AddIngredient(ItemID.TitaniumBar, 5);
+            recipe.AddIngredient(ItemID.CrystalSerpent, 1);
+            recipe.AddIngredient(mod, "AquamarineStarStriker", 1);
+            recipe.AddTile(TileID.MythrilAnvil);
+            recipe.SetResult(this);
+            recipe.AddRecipe();
+
+            recipe = new ModRecipe(mod);
+            recipe.AddIngredient(ItemID.UnicornHorn, 10);
+            recipe.AddIngredient(ItemID.SoulofLight, 8);
+            recipe.AddIngredient(ItemID.SoulofNight, 8);
+            recipe.AddIngredient(ItemID.TitaniumBar, 5);
+            recipe.AddIngredient(ItemID.CrystalSerpent, 1);
+            recipe.AddIngredient(mod, "PenumbriteStarStriker", 1);
             recipe.AddTile(TileID.MythrilAnvil);
             recipe.SetResult(this);
             recipe.AddRecipe();

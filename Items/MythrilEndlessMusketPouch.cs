@@ -32,7 +32,14 @@ namespace AlexsAssortedArsenal.Items
         {
             ModRecipe recipe = new ModRecipe(mod);
             recipe.AddIngredient(mod, "MythrilMusketBall", 3996);
-            recipe.AddRecipeGroup("AlexsAssortedArsenal:Cobalt or Palladium Bar", 10);
+            recipe.AddIngredient(ItemID.CobaltBar, 10);
+            recipe.AddTile(TileID.CrystalBall);
+            recipe.SetResult(this);
+            recipe.AddRecipe();
+
+            recipe = new ModRecipe(mod);
+            recipe.AddIngredient(mod, "MythrilMusketBall", 3996);
+            recipe.AddIngredient(ItemID.PalladiumBar, 10);
             recipe.AddTile(TileID.CrystalBall);
             recipe.SetResult(this);
             recipe.AddRecipe();

@@ -59,7 +59,16 @@ namespace AlexsAssortedArsenal.Items
             ModRecipe recipe = new ModRecipe(mod);
             recipe.AddIngredient(mod, "BladedRevolver", 1);
             recipe.AddIngredient(ItemID.Boomstick, 1);
-            recipe.AddRecipeGroup("AlexsAssortedArsenal:Demonite or Crimtane Bar", 8);
+            recipe.AddIngredient(ItemID.DemoniteBar, 8);
+            recipe.AddIngredient(ItemID.Wood, 20);
+            recipe.AddTile(TileID.Anvils);
+            recipe.SetResult(this);
+            recipe.AddRecipe();
+
+            recipe = new ModRecipe(mod);
+            recipe.AddIngredient(mod, "BladedRevolver", 1);
+            recipe.AddIngredient(ItemID.Boomstick, 1);
+            recipe.AddIngredient(ItemID.CrimtaneBar, 8);
             recipe.AddIngredient(ItemID.Wood, 20);
             recipe.AddTile(TileID.Anvils);
             recipe.SetResult(this);

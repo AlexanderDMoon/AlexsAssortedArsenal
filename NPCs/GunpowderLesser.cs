@@ -31,7 +31,7 @@ namespace AlexsAssortedArsenal.NPCs
         public override float SpawnChance(NPCSpawnInfo spawnInfo)
         {
             if (NPC.downedQueenBee)
-                return SpawnCondition.Overworld.Chance * 0.15f;
+                return SpawnCondition.OverworldDay.Chance * 0.15f;
             return 0;
         }
 
@@ -40,6 +40,9 @@ namespace AlexsAssortedArsenal.NPCs
 
             if (Main.rand.Next(1) == 0)
                 Item.NewItem(npc.getRect(), ItemID.SilverCoin, (8));
+
+            if (Main.rand.Next(1) == 0)
+                Item.NewItem(npc.getRect(), ItemID.Gel, Main.rand.Next(3, 5));
 
             if (Main.rand.Next(1) == 0)
             Item.NewItem(npc.getRect(), mod.ItemType("GunpowderCore"), 1);

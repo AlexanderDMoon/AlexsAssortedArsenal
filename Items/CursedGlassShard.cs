@@ -31,12 +31,40 @@ namespace AlexsAssortedArsenal.Items
 		{
 			ModRecipe recipe = new ModRecipe(mod);
             recipe.AddIngredient(ItemID.Glass, 250);
-            recipe.AddRecipeGroup("AlexsAssortedArsenal:Demonite or Crimtane Bar", 30);
-            recipe.AddRecipeGroup("AlexsAssortedArsenal:Shadow Scales or Tissue Samples", 30);
+            recipe.AddIngredient(ItemID.DemoniteBar, 30);
+            recipe.AddIngredient(ItemID.ShadowScale, 30);
             recipe.AddIngredient(ItemID.HellstoneBar, 10);
             recipe.AddTile(TileID.DemonAltar);
             recipe.SetResult(this);
 			recipe.AddRecipe();
-		}
+
+            recipe = new ModRecipe(mod);
+            recipe.AddIngredient(ItemID.Glass, 250);
+            recipe.AddIngredient(ItemID.DemoniteBar, 30);
+            recipe.AddIngredient(ItemID.TissueSample, 30);
+            recipe.AddIngredient(ItemID.HellstoneBar, 10);
+            recipe.AddTile(TileID.DemonAltar);
+            recipe.SetResult(this);
+            recipe.AddRecipe();
+
+            ////////////////////////////////////////
+            recipe = new ModRecipe(mod);
+            recipe.AddIngredient(ItemID.Glass, 250);
+            recipe.AddIngredient(ItemID.CrimtaneBar, 30);
+            recipe.AddIngredient(ItemID.ShadowScale, 30);
+            recipe.AddIngredient(ItemID.HellstoneBar, 10);
+            recipe.AddTile(TileID.DemonAltar);
+            recipe.SetResult(this);
+            recipe.AddRecipe();
+
+            recipe = new ModRecipe(mod);
+            recipe.AddIngredient(ItemID.Glass, 250);
+            recipe.AddIngredient(ItemID.CrimtaneBar, 30);
+            recipe.AddIngredient(ItemID.TissueSample, 30);
+            recipe.AddIngredient(ItemID.HellstoneBar, 10);
+            recipe.AddTile(TileID.DemonAltar);
+            recipe.SetResult(this);
+            recipe.AddRecipe();
+        }
 	}
 }

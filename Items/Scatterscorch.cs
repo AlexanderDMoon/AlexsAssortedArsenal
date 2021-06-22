@@ -11,7 +11,7 @@ namespace AlexsAssortedArsenal.Items
         public override void SetStaticDefaults()
         {
             DisplayName.SetDefault("Scatterscorch");
-            Tooltip.SetDefault("");
+            Tooltip.SetDefault("Uses Gel for ammo.");
         }
 
         public override void SetDefaults()
@@ -30,9 +30,9 @@ namespace AlexsAssortedArsenal.Items
             item.UseSound = SoundID.Item38;
             item.autoReuse = true;
             item.shootSpeed = 12f;
-            item.shoot = ProjectileID.Bullet;
+            item.shoot = mod.ProjectileType("ScatterscorchProj");
             item.crit = 6;
-            item.useAmmo = AmmoID.Bullet;
+            item.useAmmo = AmmoID.Gel;
         }
 
         public override bool Shoot(Player player, ref Vector2 position, ref float speedX, ref float speedY, ref int type, ref int damage, ref float knockBack)

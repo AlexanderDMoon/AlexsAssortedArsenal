@@ -64,16 +64,183 @@ namespace AlexsAssortedArsenal.Items
 
         public override void AddRecipes()
 		{
-			ModRecipe recipe = new ModRecipe(mod);
-            recipe.AddRecipeGroup("AlexsAssortedArsenal:Any Metalligem Greatsword", 1);
-            recipe.AddRecipeGroup("AlexsAssortedArsenal:Adamantite or Titanium Statusblade", 1);
-            recipe.AddIngredient(ItemID.SoulofFright, 15);
+            ModRecipe recipe = new ModRecipe(mod);
+            recipe.AddIngredient(mod, "CopperMetalligemGreatsword", 1);
+            recipe.AddIngredient(mod, "AdamantiteStatusblade", 1);
+            recipe.AddIngredient(ItemID.SoulofSight, 15);
             recipe.AddIngredient(mod, "FairiumBar", 12);
             recipe.AddIngredient(ItemID.PearlstoneBlock, 150);
             recipe.AddTile(TileID.MythrilAnvil);
             recipe.AddTile(TileID.AdamantiteForge);
-			recipe.SetResult(this);
-			recipe.AddRecipe();
-		}
+            recipe.SetResult(this);
+            recipe.AddRecipe();
+
+            recipe = new ModRecipe(mod);
+            recipe.AddIngredient(mod, "TinMetalligemGreatsword", 1);
+            recipe.AddIngredient(mod, "AdamantiteStatusblade", 1);
+            recipe.AddIngredient(ItemID.SoulofSight, 15);
+            recipe.AddIngredient(mod, "FairiumBar", 12);
+            recipe.AddIngredient(ItemID.PearlstoneBlock, 150);
+            recipe.AddTile(TileID.MythrilAnvil);
+            recipe.AddTile(TileID.AdamantiteForge);
+            recipe.SetResult(this);
+            recipe.AddRecipe();
+
+            recipe = new ModRecipe(mod);
+            recipe.AddIngredient(mod, "IronMetalligemGreatsword", 1);
+            recipe.AddIngredient(mod, "AdamantiteStatusblade", 1);
+            recipe.AddIngredient(ItemID.SoulofSight, 15);
+            recipe.AddIngredient(mod, "FairiumBar", 12);
+            recipe.AddIngredient(ItemID.PearlstoneBlock, 150);
+            recipe.AddTile(TileID.MythrilAnvil);
+            recipe.AddTile(TileID.AdamantiteForge);
+            recipe.SetResult(this);
+            recipe.AddRecipe();
+
+            recipe = new ModRecipe(mod);
+            recipe.AddIngredient(mod, "LeadMetalligemGreatsword", 1);
+            recipe.AddIngredient(mod, "AdamantiteStatusblade", 1);
+            recipe.AddIngredient(ItemID.SoulofSight, 15);
+            recipe.AddIngredient(mod, "FairiumBar", 12);
+            recipe.AddIngredient(ItemID.PearlstoneBlock, 150);
+            recipe.AddTile(TileID.MythrilAnvil);
+            recipe.AddTile(TileID.AdamantiteForge);
+            recipe.SetResult(this);
+            recipe.AddRecipe();
+
+            recipe = new ModRecipe(mod);
+            recipe.AddIngredient(mod, "SilverMetalligemGreatsword", 1);
+            recipe.AddIngredient(mod, "AdamantiteStatusblade", 1);
+            recipe.AddIngredient(ItemID.SoulofSight, 15);
+            recipe.AddIngredient(mod, "FairiumBar", 12);
+            recipe.AddIngredient(ItemID.PearlstoneBlock, 150);
+            recipe.AddTile(TileID.MythrilAnvil);
+            recipe.AddTile(TileID.AdamantiteForge);
+            recipe.SetResult(this);
+            recipe.AddRecipe();
+
+            recipe = new ModRecipe(mod);
+            recipe.AddIngredient(mod, "TungstenMetalligemGreatsword", 1);
+            recipe.AddIngredient(mod, "AdamantiteStatusblade", 1);
+            recipe.AddIngredient(ItemID.SoulofSight, 15);
+            recipe.AddIngredient(mod, "FairiumBar", 12);
+            recipe.AddIngredient(ItemID.PearlstoneBlock, 150);
+            recipe.AddTile(TileID.MythrilAnvil);
+            recipe.AddTile(TileID.AdamantiteForge);
+            recipe.SetResult(this);
+            recipe.AddRecipe();
+
+            recipe = new ModRecipe(mod);
+            recipe.AddIngredient(mod, "GoldMetalligemGreatsword", 1);
+            recipe.AddIngredient(mod, "AdamantiteStatusblade", 1);
+            recipe.AddIngredient(ItemID.SoulofSight, 15);
+            recipe.AddIngredient(mod, "FairiumBar", 12);
+            recipe.AddIngredient(ItemID.PearlstoneBlock, 150);
+            recipe.AddTile(TileID.MythrilAnvil);
+            recipe.AddTile(TileID.AdamantiteForge);
+            recipe.SetResult(this);
+            recipe.AddRecipe();
+
+            recipe = new ModRecipe(mod);
+            recipe.AddIngredient(mod, "PlatinumMetalligemGreatsword", 1);
+            recipe.AddIngredient(mod, "AdamantiteStatusblade", 1);
+            recipe.AddIngredient(ItemID.SoulofSight, 15);
+            recipe.AddIngredient(mod, "FairiumBar", 12);
+            recipe.AddIngredient(ItemID.PearlstoneBlock, 150);
+            recipe.AddTile(TileID.MythrilAnvil);
+            recipe.AddTile(TileID.AdamantiteForge);
+            recipe.SetResult(this);
+            recipe.AddRecipe();
+
+            /////////////////////////////////////////////////////////////
+
+            recipe = new ModRecipe(mod);
+            recipe.AddIngredient(mod, "CopperMetalligemGreatsword", 1);
+            recipe.AddIngredient(mod, "TitaniumStatusblade", 1);
+            recipe.AddIngredient(ItemID.SoulofSight, 15);
+            recipe.AddIngredient(mod, "FairiumBar", 12);
+            recipe.AddIngredient(ItemID.PearlstoneBlock, 150);
+            recipe.AddTile(TileID.MythrilAnvil);
+            recipe.AddTile(TileID.AdamantiteForge);
+            recipe.SetResult(this);
+            recipe.AddRecipe();
+
+            recipe = new ModRecipe(mod);
+            recipe.AddIngredient(mod, "TinMetalligemGreatsword", 1);
+            recipe.AddIngredient(mod, "TitaniumStatusblade", 1);
+            recipe.AddIngredient(ItemID.SoulofSight, 15);
+            recipe.AddIngredient(mod, "FairiumBar", 12);
+            recipe.AddIngredient(ItemID.PearlstoneBlock, 150);
+            recipe.AddTile(TileID.MythrilAnvil);
+            recipe.AddTile(TileID.AdamantiteForge);
+            recipe.SetResult(this);
+            recipe.AddRecipe();
+
+            recipe = new ModRecipe(mod);
+            recipe.AddIngredient(mod, "IronMetalligemGreatsword", 1);
+            recipe.AddIngredient(mod, "TitaniumStatusblade", 1);
+            recipe.AddIngredient(ItemID.SoulofSight, 15);
+            recipe.AddIngredient(mod, "FairiumBar", 12);
+            recipe.AddIngredient(ItemID.PearlstoneBlock, 150);
+            recipe.AddTile(TileID.MythrilAnvil);
+            recipe.AddTile(TileID.AdamantiteForge);
+            recipe.SetResult(this);
+            recipe.AddRecipe();
+
+            recipe = new ModRecipe(mod);
+            recipe.AddIngredient(mod, "LeadMetalligemGreatsword", 1);
+            recipe.AddIngredient(mod, "TitaniumStatusblade", 1);
+            recipe.AddIngredient(ItemID.SoulofSight, 15);
+            recipe.AddIngredient(mod, "FairiumBar", 12);
+            recipe.AddIngredient(ItemID.PearlstoneBlock, 150);
+            recipe.AddTile(TileID.MythrilAnvil);
+            recipe.AddTile(TileID.AdamantiteForge);
+            recipe.SetResult(this);
+            recipe.AddRecipe();
+
+            recipe = new ModRecipe(mod);
+            recipe.AddIngredient(mod, "SilverMetalligemGreatsword", 1);
+            recipe.AddIngredient(mod, "TitaniumStatusblade", 1);
+            recipe.AddIngredient(ItemID.SoulofSight, 15);
+            recipe.AddIngredient(mod, "FairiumBar", 12);
+            recipe.AddIngredient(ItemID.PearlstoneBlock, 150);
+            recipe.AddTile(TileID.MythrilAnvil);
+            recipe.AddTile(TileID.AdamantiteForge);
+            recipe.SetResult(this);
+            recipe.AddRecipe();
+
+            recipe = new ModRecipe(mod);
+            recipe.AddIngredient(mod, "TungstenMetalligemGreatsword", 1);
+            recipe.AddIngredient(mod, "TitaniumStatusblade", 1);
+            recipe.AddIngredient(ItemID.SoulofSight, 15);
+            recipe.AddIngredient(mod, "FairiumBar", 12);
+            recipe.AddIngredient(ItemID.PearlstoneBlock, 150);
+            recipe.AddTile(TileID.MythrilAnvil);
+            recipe.AddTile(TileID.AdamantiteForge);
+            recipe.SetResult(this);
+            recipe.AddRecipe();
+
+            recipe = new ModRecipe(mod);
+            recipe.AddIngredient(mod, "GoldMetalligemGreatsword", 1);
+            recipe.AddIngredient(mod, "TitaniumStatusblade", 1);
+            recipe.AddIngredient(ItemID.SoulofSight, 15);
+            recipe.AddIngredient(mod, "FairiumBar", 12);
+            recipe.AddIngredient(ItemID.PearlstoneBlock, 150);
+            recipe.AddTile(TileID.MythrilAnvil);
+            recipe.AddTile(TileID.AdamantiteForge);
+            recipe.SetResult(this);
+            recipe.AddRecipe();
+
+            recipe = new ModRecipe(mod);
+            recipe.AddIngredient(mod, "PlatinumMetalligemGreatsword", 1);
+            recipe.AddIngredient(mod, "TitaniumStatusblade", 1);
+            recipe.AddIngredient(ItemID.SoulofSight, 15);
+            recipe.AddIngredient(mod, "FairiumBar", 12);
+            recipe.AddIngredient(ItemID.PearlstoneBlock, 150);
+            recipe.AddTile(TileID.MythrilAnvil);
+            recipe.AddTile(TileID.AdamantiteForge);
+            recipe.SetResult(this);
+            recipe.AddRecipe();
+        }
 	}
 }

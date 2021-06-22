@@ -56,6 +56,11 @@ namespace AlexsAssortedArsenal.Items
             {
                 type = mod.ProjectileType("CoilgunExplosiveBolt");
             }
+
+            if (type == mod.ProjectileType("CoilgunBoltEnergized"))
+            {
+                type = mod.ProjectileType("CoilgunBoltEnergized");
+            }
             return true;
         }
 
@@ -72,7 +77,15 @@ namespace AlexsAssortedArsenal.Items
             //- 12 Souls of Might.
 
             ModRecipe recipe = new ModRecipe(mod);
-            recipe.AddRecipeGroup("AlexsAssortedArsenal:Adamantite or Titanium Musket", 1);
+            recipe.AddIngredient(mod, "AdamantiteMusket", 1);
+            recipe.AddIngredient(ItemID.SoulofMight, 12);
+            recipe.AddIngredient(ItemID.HallowedBar, 8);
+            recipe.AddTile(TileID.MythrilAnvil);
+            recipe.SetResult(this);
+            recipe.AddRecipe();
+
+            recipe = new ModRecipe(mod);
+            recipe.AddIngredient(mod, "TitaniumMusket", 1);
             recipe.AddIngredient(ItemID.SoulofMight, 12);
             recipe.AddIngredient(ItemID.HallowedBar, 8);
             recipe.AddTile(TileID.MythrilAnvil);

@@ -21,7 +21,7 @@ namespace AlexsAssortedArsenal.Projectiles
             projectile.aiStyle = 1;
             projectile.friendly = true;
             projectile.hostile = false;
-            projectile.magic = true;
+            projectile.ranged = true;
             projectile.penetrate = 2;
             projectile.timeLeft = 45;
             projectile.alpha = 255;

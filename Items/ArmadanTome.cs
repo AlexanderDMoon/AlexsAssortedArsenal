@@ -16,7 +16,7 @@ namespace AlexsAssortedArsenal.Items
 
         public override void SetDefaults()
         {
-            item.damage = 18;
+            item.damage = 20;
             item.magic = true;
             item.mana = 5;
             item.width = 28;
@@ -38,7 +38,15 @@ namespace AlexsAssortedArsenal.Items
         public override void AddRecipes()
         {
             ModRecipe recipe = new ModRecipe(mod);
-            recipe.AddRecipeGroup("AlexsAssortedArsenal:Vilethorn or Crimson Rod", 1);
+            recipe.AddIngredient(ItemID.Vilethorn, 1);
+            recipe.AddIngredient(ItemID.Feather, 5);
+            recipe.AddIngredient(ItemID.SunplateBlock, 10);
+            recipe.AddTile(TileID.SkyMill);
+            recipe.SetResult(this);
+            recipe.AddRecipe();
+
+            recipe = new ModRecipe(mod);
+            recipe.AddIngredient(ItemID.CrimsonRod, 1);
             recipe.AddIngredient(ItemID.Feather, 5);
             recipe.AddIngredient(ItemID.SunplateBlock, 10);
             recipe.AddTile(TileID.SkyMill);
